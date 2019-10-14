@@ -36,9 +36,9 @@ export default class App extends Component {
   render(){
     return (
       <BrowserRouter>
-        <div className='App'>
+        <main className='App'>
           {this.renderRoutes().loginRoute}
-        </div>
+        </main>
       </BrowserRouter>
     )
   }
