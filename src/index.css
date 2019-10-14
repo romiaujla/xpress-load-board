@@ -14,5 +14,9 @@ main, nav, address, i{
 
 body{
   background-color: rgb(246, 42, 62);
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
 }
