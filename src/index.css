@@ -20,3 +20,22 @@ body{
 * {
   box-sizing: border-box;
 }
+
+/* Global Styles */
+.app-button{
+  background: rgb(246, 42, 62);
+  border: none;
+  color: white;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  padding: 10px 18px;
+  letter-spacing: 0.1em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+}
+.app-button:hover,
+.app-button:focus{
+  background: rgb(200, 42, 62);
+}
