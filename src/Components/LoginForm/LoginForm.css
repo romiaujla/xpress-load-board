@@ -1,0 +1,50 @@
+.LoginForm-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.LoginForm-form fieldset{
+    display: block;
+    border:none;
+}
+.LoginForm-form legend{
+    width:100%;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: rgb(237, 237, 237);
+    text-align: center;
+    padding: 1em;   
+    color: rgb(86, 86, 86);
+}
+.LoginForm-form .sign-up-div,
+.LoginForm-form .login-div,
+.LoginForm-form .submit-button-div{
+    text-align: center;
+    padding: 1em;
+}
+.LoginForm-form .div-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.LoginForm-form .div-header .left-line,
+.LoginForm-form .div-header .right-line{
+    height:1px;
+    width:100%;
+    background: rgb(221, 221, 221);
+    flex: 3;
+}
+.LoginForm-form .div-header .left-line{
+    margin-right: 15px;
+}
+.LoginForm-form .div-header .right-line{
+    margin-left: 15px;
+}
+.LoginForm-form .div-header .center-text{
+    text-transform: uppercase;
+    color: rgb(100, 100, 100);
+    font-size: 0.7em;
+
+}
