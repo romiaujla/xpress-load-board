@@ -1,8 +1,13 @@
+.LoginForm{
+    padding-top: 8%;
+}
 .LoginForm-form{
     display: flex;
     flex-direction: column;
     width: 100%;
     background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 3px rgba(86, 86, 86, 0.21);
 }
 .LoginForm-form fieldset{
     display: block;
@@ -12,14 +17,18 @@
     width:100%;
     text-transform: uppercase;
     font-weight: 600;
+    font-size: 0.9em;
     background: rgb(237, 237, 237);
     text-align: center;
     padding: 1em;   
     color: rgb(86, 86, 86);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 .LoginForm-form .sign-up-div,
 .LoginForm-form .login-div,
 .LoginForm-form .submit-button-div{
+    letter-spacing: 0.08em;
     text-align: center;
     padding: 1em;
 }
@@ -44,7 +53,69 @@
 }
 .LoginForm-form .div-header .center-text{
     text-transform: uppercase;
-    color: rgb(100, 100, 100);
-    font-size: 0.7em;
+    color: rgb(200, 200, 200);
+    font-size: 0.8em;
+}
+.LoginForm-form .sign-up-button .app-button{
+    margin-top:20px;
+}
+.LoginForm-form .input-label{
+    text-transform: uppercase;
+    color: rgb(86, 86, 86);
+    display: block;
+    text-align: left;
+    font-size: 0.8em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+.LoginForm-form input{
+    font-size: 1em;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 3px;
+}
+.LoginForm-form .app-button{
+    width: 100%;
+}
+.LoginForm header .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(86, 86, 86);
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-family: 'Cinzel', serif;
+}
+.LoginForm .truck-icon{
+    margin-right: 10px;
+    margin-top: 6px;
+    font-size: 2em;
+}
+.LoginForm .xpress,
+.LoginForm .dispatcher{
+    display: block;
+    text-align: left;
+    font-size: 1.5em;
+    margin-bottom: -10px
+}
 
+@media only screen and (min-width: 660px){
+    .LoginForm-form{
+        max-width: 400px;
+        margin: auto;
+    }
+    .LoginForm-form .app-button{
+        width: 60%;
+    }
+    .LoginForm .truck-icon{
+        font-size: 4.5em;
+    }
+    .LoginForm .xpress,
+    .LoginForm .dispatcher{
+        font-size: 2.5em;
+    }
 }
