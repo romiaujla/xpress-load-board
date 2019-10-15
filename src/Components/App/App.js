@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import { BrowserRouter, Route } from 'react-router-dom';
 import LoginForm from '../LoginForm/LoginForm';
+import Header from '../Header/Header';
 
 export default class App extends Component {
 
@@ -36,9 +37,10 @@ export default class App extends Component {
   render(){
     return (
       <BrowserRouter>
-        <main className='App'>
+        <div className='App'>
+          <Header />
           {this.renderRoutes().loginRoute}
-        </main>
+        </div>
       </BrowserRouter>
     )
   }
