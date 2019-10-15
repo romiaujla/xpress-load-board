@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import './App.css';
-import { BrowserRouter, Route } from 'react-router-dom';
-import LoginForm from '../LoginForm/LoginForm';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import Header from '../Header/Header';
+import LoginPage from '../../Routes/LoginPage/LoginPage';
+import CreateAccountPage from '../../Routes/CreateAccountPage/CreateAccountPage';
 
 export default class App extends Component {
 
@@ -10,7 +11,14 @@ export default class App extends Component {
     super(props);
     // initialize the state variables below
     this.state = {
+      hasError: false
+    }
+  }
 
+  static getDerivedStateFromError(error){
+    console.log(error);
+    return {
+      hasError: true
     }
   }
 
@@ -18,30 +26,33 @@ export default class App extends Component {
     // get data from the database and set state
   }
 
-  renderRoutes = () => {
-    const loginPath = [
-      '/'
-    ]
-
-    const loginRoute = <Route 
-      exact
-      path={loginPath}
-      component={LoginForm}
-      />
-
-    return {
-      loginRoute,
-    }
-  }
-
   render(){
     return (
-      <BrowserRouter>
         <div className='App'>
           <Header />
-          {this.renderRoutes().loginRoute}
+          {
+            this.state.hasError && <p className='red'>There was an error</p>
+          }
+          <main className='App-main'>
+            <Switch>
+              <Redirect
+                exact
+                from='/'
+                to='/login'
+              />
+              <Route
+                exact
+                path='/login'
+                component={ LoginPage }
+              />
+              <Route
+                exact
+                path='/create-account'
+                component={ CreateAccountPage }
+              />
+            </Switch>
+          </main>
         </div>
-      </BrowserRouter>
     )
   }
 }
