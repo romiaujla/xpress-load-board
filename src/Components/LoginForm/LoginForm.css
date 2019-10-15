@@ -56,7 +56,9 @@
     color: rgb(200, 200, 200);
     font-size: 0.8em;
 }
-.LoginForm-form .sign-up-button .app-button{
+.LoginForm-form .sign-up-button a.app-button{
+    display: inline-block;
+    text-decoration: none;
     margin-top:20px;
 }
 .LoginForm-form .input-label{

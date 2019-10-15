@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import './LoginForm.css';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library, findIconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 library.add(fas);
+
 
 class LoginForm extends Component {
     constructor(props) {
@@ -41,12 +43,15 @@ class LoginForm extends Component {
                                     <div className='right-line'></div>
                                 </div>
                                 <div className='sign-up-button'>
-                                    <button
+                                    <Link to='/register' className='app-button'>
+                                        Create Account
+                                    </Link>
+                                    {/* <button
                                         type='button'
                                         className='app-button'
                                     >
                                         Create Account
-                                </button>
+                                </button> */}
                                 </div>
                             </div>
                             <div className='login-div'>
