@@ -46,12 +46,6 @@ class LoginForm extends Component {
                                     <Link to='/register' className='app-button'>
                                         Create Account
                                     </Link>
-                                    {/* <button
-                                        type='button'
-                                        className='app-button'
-                                    >
-                                        Create Account
-                                </button> */}
                                 </div>
                             </div>
                             <div className='login-div'>
