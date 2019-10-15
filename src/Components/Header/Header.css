@@ -21,3 +21,13 @@
     font-size: 1.5em;
     margin-bottom: -10px
 }
+
+@media only screen and (min-width: 660px){
+    .Header .truck-icon{
+        font-size: 4.5em;
+    }
+    .Header .xpress,
+    .Header .dispatcher{
+        font-size: 2.5em;
+    }
+}

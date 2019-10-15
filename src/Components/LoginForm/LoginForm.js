@@ -10,9 +10,6 @@ class LoginForm extends Component {
     render() {
 
         return (
-            // Adding Comment to test git remote change 
-
-
             <form className='LoginForm-form'>
                 <fieldset>
                     <legend>
