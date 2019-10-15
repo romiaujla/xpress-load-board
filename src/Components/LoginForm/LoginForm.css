@@ -1,5 +1,5 @@
-.LoginForm{
-    padding-top: 8%;
+.Header{
+    margin-top: 8%;
 }
 .LoginForm-form{
     display: flex;
@@ -81,30 +81,7 @@
 .LoginForm-form .app-button{
     width: 100%;
 }
-.LoginForm header .logo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: rgb(86, 86, 86);
-    font-weight: 600;
-    margin-bottom: 20px;
-    font-style: italic;
-    font-family: 'Cinzel', serif;
-}
-.LoginForm .truck-icon{
-    margin-right: 10px;
-    margin-top: 6px;
-    font-size: 2em;
-}
-.LoginForm .xpress,
-.LoginForm .dispatcher{
-    display: block;
-    text-align: left;
-    font-size: 1.5em;
-    margin-bottom: -10px
-}
-.LoginForm .error-message{
+.LoginForm-form .error-message{
     font-weight: 800;
     text-transform: uppercase;
     font-size: 0.7em;
@@ -113,7 +90,7 @@
     padding-top: 3px;
     color: red;
 }
-.LoginForm .forgot-password{
+.LoginForm-form .forgot-password{
     text-decoration: none;
     color: rgb(246, 42, 62);
     font-size: 0.7em;
@@ -121,11 +98,11 @@
     margin-bottom: 5px;
     cursor: pointer;
 }
-.LoginForm .forgot-password:hover,
-.LoginForm .forgot-password:focus{
+.LoginForm-form .forgot-password:hover,
+.LoginForm-form .forgot-password:focus{
     text-decoration: underline;
 }
-.LoginForm .submit-button-div .app-button{
+.LoginForm-form .submit-button-div .app-button{
     margin-bottom: 20px;
 }
 
@@ -137,11 +114,11 @@
     .LoginForm-form .app-button{
         width: 60%;
     }
-    .LoginForm .truck-icon{
+    .LoginForm-form .truck-icon{
         font-size: 4.5em;
     }
-    .LoginForm .xpress,
-    .LoginForm .dispatcher{
+    .LoginForm-form .xpress,
+    .LoginForm-form .dispatcher{
         font-size: 2.5em;
     }
 }
