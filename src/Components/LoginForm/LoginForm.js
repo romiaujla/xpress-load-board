@@ -66,6 +66,7 @@ class LoginForm extends Component {
 
                                         />
                                     </label>
+                                    <span className='error-message'>Invalid Username</span>
                                     <label htmlFor='password'>
                                         <span className='input-label'>
                                             Password:
@@ -76,9 +77,11 @@ class LoginForm extends Component {
 
                                         />
                                     </label>
+                                    <span className='error-message'>Password did not match</span>
                                 </div>
                             </div>
                             <div className='submit-button-div'>
+                                <span className='forgot-password'>Forgot Password?</span>
                                 <button
                                     type='submit'
                                     className='app-button'
