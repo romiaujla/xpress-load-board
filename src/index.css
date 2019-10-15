@@ -41,3 +41,8 @@ body{
 .app-button:focus{
   background: rgb(200, 42, 62);
 }
+
+input[type='text']{
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: .06em;
+}

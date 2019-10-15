@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import './LoginForm.css';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { library, findIconDefinition } from '@fortawesome/fontawesome-svg-core';
-import { fas } from '@fortawesome/free-solid-svg-icons';
-library.add(fas);
+
 
 
 class LoginForm extends Component {
@@ -14,17 +12,12 @@ class LoginForm extends Component {
     }
     render() {
 
-        const truck = findIconDefinition({
-            prefix: 'fas',
-            iconName: 'shipping-fast'
-        })
-
         return (
             <section className='LoginForm'>
                 <div className='LoginForm-child'>
                     <header>
                         <div className='logo'>
-                            <FontAwesomeIcon icon={truck} className='truck-icon' />
+                            <FontAwesomeIcon icon='shipping-fast' className='truck-icon' />
                             <div className='app-title'>
                                 <span className='xpress'>Xpress</span>
                                 <span className='dispatcher'>Dispatcher</span>
@@ -62,7 +55,9 @@ class LoginForm extends Component {
                                         <input
                                             type='text'
                                             required
-
+                                            id='user-name'
+                                            name='user-name'
+                                            className='user-name'
                                         />
                                     </label>
                                     <span className='error-message'>Invalid Username</span>
@@ -84,7 +79,6 @@ class LoginForm extends Component {
                                 <button
                                     type='submit'
                                     className='app-button'
-                                // onSubmit=''
                                 >
                                     Login
                             </button>
