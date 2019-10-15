@@ -1,0 +1,23 @@
+.Header .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(86, 86, 86);
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-family: 'Cinzel', serif;
+}
+.Header .truck-icon{
+    margin-right: 10px;
+    margin-top: 6px;
+    font-size: 2em;
+}
+.Header .xpress,
+.Header .dispatcher{
+    display: block;
+    text-align: left;
+    font-size: 1.5em;
+    margin-bottom: -10px
+}
