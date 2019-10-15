@@ -24,7 +24,7 @@ class LoginForm extends Component {
                             <div className='right-line'></div>
                         </div>
                         <div className='sign-up-button'>
-                            <Link to='/register' className='app-button'>
+                            <Link to='/create-account' className='app-button'>
                                 Create Account
                             </Link>
                         </div>
